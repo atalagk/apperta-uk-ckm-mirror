@@ -27,11 +27,11 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"7b0f95d6-94fe-3cdd-82a8-a36060df88db">
-		["MD5-CAM-1.0.1"] = <"bc8a1c59f2ace11e7882d60571b81c3a">
+		["MD5-CAM-1.0.1"] = <"937459b86525ed4c5f919a4053ff969f">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- koray_proms_dv_scale_test
+	OBSERVATION[at0000] matches {    -- Koray PROMs Test OBSERVATION
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -91,8 +91,9 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"koray_proms_dv_scale_test">
-					description = <"koray_proms_dv_scale_test">
+					text = <"Koray PROMs Test OBSERVATION">
+					description = <"OBSERVATION Desc">
+					comment = <"OBSERVATION Comment">
 				>
 				["at0001"] = <
 					text = <"History">
