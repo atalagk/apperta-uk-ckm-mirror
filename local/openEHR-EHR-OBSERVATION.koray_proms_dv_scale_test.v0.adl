@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"7b0f95d6-94fe-3cdd-82a8-a36060df88db">
-		["MD5-CAM-1.0.1"] = <"7399960cc6285e37c5f07637b77a8b1a">
+		["MD5-CAM-1.0.1"] = <"1d803d3f9d5acfbc8585c2bcf0f4f9ce">
 	>
 
 definition
@@ -51,6 +51,17 @@ definition
 												value matches {
 													1.5|[local::at0016],
 													2.5|[local::at0017]
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Question 3
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0019,    -- Code1
+															at0020]    -- Code 2
+														}
+													}
 												}
 											}
 										}
@@ -132,6 +143,18 @@ ontology
 				["at0017"] = <
 					text = <"Scale Option 2">
 					description = <"Scale Option 2 Desc">
+				>
+				["at0018"] = <
+					text = <"Question 3">
+					description = <"Desc for Q3">
+				>
+				["at0019"] = <
+					text = <"Code1">
+					description = <"Code1 Desc">
+				>
+				["at0020"] = <
+					text = <"Code 2">
+					description = <"Code2 Desc">
 				>
 			>
 		>
