@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"7b0f95d6-94fe-3cdd-82a8-a36060df88db">
-		["MD5-CAM-1.0.1"] = <"937459b86525ed4c5f919a4053ff969f">
+		["MD5-CAM-1.0.1"] = <"95294db39bc3f37fed50059dc12789a9">
 	>
 
 definition
@@ -67,6 +67,13 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0022] occurrences matches {0..1} matches {*}    -- CLUSTER for heading purpose (no sub questions under it)
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Question 4
+										value matches {
+											1.0|[local::at0024],
+											2.0|[local::at0025]
+										}
+									}
 								}
 							}
 						}
@@ -94,6 +101,8 @@ ontology
 					text = <"Koray PROMs Test OBSERVATION">
 					description = <"OBSERVATION Desc">
 					comment = <"OBSERVATION Comment">
+					UseCondition = <"Free">
+					CopyrightStatement = <"FirstPage">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -110,7 +119,7 @@ ontology
 				["at0004"] = <
 					text = <"Functional Status">
 					description = <"CLUSTER Description: Number of questions under a group/domain">
-					comment = <"CLUSTER Comment: can be used to add PROMs specific instructions">
+					comment = <"CLUSTER Comment: can be used to add Section specific instructions">
 				>
 				["at0005"] = <
 					text = <"Question 1">
@@ -162,6 +171,22 @@ ontology
 				["at0021"] = <
 					text = <"Scale Option 3">
 					description = <"Scale Option 3 Desc (integer)">
+				>
+				["at0022"] = <
+					text = <"CLUSTER for heading purpose (no sub questions under it)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Question 4">
+					description = <"Root level">
+				>
+				["at0024"] = <
+					text = <"Option 1 for Q4">
+					description = <"Option 1 for Q4 Description">
+				>
+				["at0025"] = <
+					text = <"Option 2 for Q4 Description">
+					description = <"Option 2 for Q4 Description">
 				>
 			>
 		>
