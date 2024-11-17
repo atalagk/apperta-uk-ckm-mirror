@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"7b0f95d6-94fe-3cdd-82a8-a36060df88db">
-		["MD5-CAM-1.0.1"] = <"bbcb05c793397acdc4db219ad26375e1">
+		["MD5-CAM-1.0.1"] = <"5059c13df52a378c72cc2c16885b0146">
 	>
 
 definition
@@ -51,7 +51,7 @@ definition
 												value matches {
 													1.5|[local::at0016],
 													2.5|[local::at0017],
-													3.0|[local::at0021]
+													3.2512|[local::at0021]
 												}
 											}
 											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Question 3
