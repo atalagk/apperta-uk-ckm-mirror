@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2024-11-17">
 		["name"] = <"Koray Atalag">
 		["organisation"] = <"Galata-Digital">
 		["email"] = <"koray.atalag@gmail.com">
-		["date"] = <"2024-11-17">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,8 +26,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"10e03a1fd35b8fd49781cd79b200475a">
 		["build_uid"] = <"7b0f95d6-94fe-3cdd-82a8-a36060df88db">
+		["MD5-CAM-1.0.1"] = <"7a1565ced74c4f4d1899d64a05a5d38a">
 	>
 
 definition
@@ -45,6 +45,12 @@ definition
 												value matches {
 													1|[local::at0013],
 													2|[local::at0014]
+												}
+											}
+											ELEMENT[at0015] occurrences matches {0..1} matches {    -- Question 2
+												value matches {
+													1.0|[local::at0016],
+													2.0|[local::at0017]
 												}
 											}
 										}
@@ -114,6 +120,18 @@ ontology
 				["at0014"] = <
 					text = <"Ord 2">
 					description = <"Choice2 for ordinal 1">
+				>
+				["at0015"] = <
+					text = <"Question 2">
+					description = <"Question 2 description (SCALE try!)">
+				>
+				["at0016"] = <
+					text = <"Scale Option 1">
+					description = <"Scale Option 1 Desc">
+				>
+				["at0017"] = <
+					text = <"Scale Option 2">
+					description = <"Scale Option 2 Desc">
 				>
 			>
 		>
